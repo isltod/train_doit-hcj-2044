@@ -1,18 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<title>박스모델</title>
-	<style>
+  <meta charset="UTF-8">
+  <title>박스모델</title>
+  <style>
     div {
-      width:200px;
-      height:150px;
+      width: 200px;
+      height: 150px;
     }
+
     /* Do it! 원하는 꼭짓점만 둥글게 처리하기 */
-    
-	</style>
+    .corner {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border: 2px solid blue;
+    }
+  </style>
 </head>
+
 <body>
-  <div></div>
+  <div class="corner"></div>
 </body>
+
 </html>
