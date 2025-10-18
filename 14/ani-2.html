@@ -1,23 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>Animation</title>
   <style>
     .box {
       width: 100px;
-      height: 100px;      
+      height: 100px;
       background-color: #07f;
-      animation-name: slideRight;
-      animation-duration: 2s;
       /* Do it! 애니메이션 무한 반복 & 방향 지정하기 */
-
+      animation: slideRight 2s alternate infinite ease-in-out;
+      /* animation-name: slideRight;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out; */
     }
 
     @keyframes slideRight {
       from {
         transform: translateX(0);
       }
+
       to {
         transform: translateX(500px);
       }
@@ -26,6 +31,7 @@
 </head>
 
 <body>
-	<div class="box">	</div>
+  <div class="box"> </div>
 </body>
+
 </html>
