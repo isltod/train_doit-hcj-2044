@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM event 객체</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }    
+    }
+
     body {
       display: flex;
       justify-content: center;
@@ -18,14 +20,20 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <img src="images/kitty-1.png" id="cat">		
+    <img src="images/kitty-1.png" id="cat">
   </div>
 
-	<script>
+  <script>
     // Do it! DOM을 사용해 이벤트 처리하기 
-
-	</script>
+    let cat = document.querySelector('#cat');
+    cat.onclick = changePic;
+    function changePic() {
+      this.src = 'images/kitty-2.png';
+    };
+  </script>
 </body>
+
 </html>
